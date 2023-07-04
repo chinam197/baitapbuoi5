@@ -1,0 +1,63 @@
+
+main article{
+    margin: 0px 10px;
+    height: 100vh;
+}
+/* thuoc tinh chung cua 3 list */
+.color-list{
+    height: 40px;
+    background-color: #d95925;
+}
+.size-list {
+    display: inline-block;
+    height: 40px;
+   width: 100%;
+   color: white;
+   background-color:#d95925;
+   margin-bottom: 5px;
+   display: flex;
+}
+
+/* list 1 */
+.list {
+    margin-top: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+div[class^="list-"] {
+    display: none;
+}
+
+/* bat 3 list  */
+#info-list1:checked ~.list-1 {
+ 
+    display: block;
+    transform: 10s;
+}
+
+#info-list2:checked ~.list-2 {
+    display: block;
+}
+#info-list3:checked ~.list-3 {
+    display: block;
+}
+/* can chinh 3 the h3 */
+.size-list > h3 {
+  position: relative;
+  left: 35px;
+  bottom:8px ;
+  user-select: none;
+}
+/* hieu hung bat tat */
+
+.icon-plus {
+    display: none;
+}
+.icon-hyphen > i{
+    position: relative;
+    width: 30px;
+    left: 30px;
+}

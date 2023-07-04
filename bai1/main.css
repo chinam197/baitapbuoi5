@@ -1,0 +1,198 @@
+:root {
+--font-size :25px ;
+
+--margin-input :25px ;
+
+}
+
+@font-face {
+    font-family: lobster;
+    src: url(./font/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(./font/Lato-Light.ttf);
+}
+
+/* main */
+.main-1 {
+    margin: 0px auto;
+    width: 960px;
+    height: 100vh;
+}
+
+form:not(.checkbox) {
+    width: 100%;
+    height: 600px;
+    font-size: 20px;
+}
+/*  */
+.main-section1 {
+    width: 800px;
+    height: 100%;
+    margin: 0px auto;
+   
+}
+/*chinh font header  */
+
+
+.header {
+    font-family: lobster;
+    font-size: 40px;
+}
+/* chinh doan van ban */
+.style-1 {
+    font-size: var(--font-size);
+    color: red;
+    font-family: lato;
+}
+.style-2 {
+    font-size: var(--font-size);
+    font-family: lato;
+}
+
+
+/* chinh font icon */
+ .style-input label > i {
+    color: white;
+} 
+.style-input2 label > i {
+    color: white;
+    margin-top: 5px;
+}
+
+
+input[id^="click-"] {
+    width: 100%;
+    height: 40px;
+    border: solid #dddddd 2.5px;
+   
+}
+
+.style-input > .click-img {
+    width:40px ;
+    height:44px;
+    background-color:#dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1.5px #dddddd;
+   
+} 
+.style-input{
+    display: flex;
+    margin-top:var(--margin-input);
+    
+}
+
+.style-input > input {
+    text-indent: 10px;
+    font-family: lato;
+}
+
+ input::placeholder {
+   text-indent: 10px;
+}
+.style-input2 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: var(--margin-input);
+}
+.style-input2:hover {
+    background-color: black;
+}
+.style-input2 > div {
+    height: 200px;
+    width: 40px;
+    text-align: center;
+    background-color: #dddddd;
+   
+}
+
+textarea#click-message{
+    width: 800px;
+    height: 195px;
+    font-family: lato;
+    text-indent: 10px;
+}
+
+.checkbox-send {
+    display: flex;
+    margin-top: 20px;
+}
+.checkbox-send > .checkbox > span > input {
+width: 23px;
+height: 23px;
+
+}
+.checkbox {
+    font-family: lato;
+    font-size: 15px;
+}
+input[type="checkbox"] {
+    background-color: black;
+    border-color: black;
+  }
+  
+.checkbox-send .send > button {
+    position: relative;
+    left: 450px;
+    width: 120px;
+    height: 40px;
+    font-family: lato;
+    background-color: red;
+    color: white;
+    border: red;
+}
+.checkbox-send .send{
+    width: 30px;
+    height: 20px;
+   
+}
+.send > button{
+    color: black;
+}
+#select {
+    border: 0px;
+    position: relative;
+}
+.fa-solid{
+    font-size: 20px;
+    color: black;
+    position: relative;
+    bottom: 2px;
+  
+    
+}
+/* hieu ung focus */
+.input-please{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    background-color: black;
+     color: white;
+     left: 20px;
+     position: relative;
+     display: none;
+}
+
+
+
+
+/*  hieu ung hover */
+
+form .style-input:hover {
+    border: solid black;
+}
+form .style-input:hover > .click-img {
+    background-color: black ;
+}
+
+
+form .style-input2:hover > .click-message{
+    background-color: black;
+}
+
+
